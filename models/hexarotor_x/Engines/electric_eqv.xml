@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+  File:     electric_eqv.xml
+  Author:   Matt Vacanti
+
+-->
+
+<electric_engine name="electric_eqv">
+  <power unit="WATTS"> 525 </power>
+</electric_engine>

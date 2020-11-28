@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+  File:     DJI-3510-380.xml
+  Author:   Matt Vacanti
+-->
+
+<!--5S Configuration-->
+<bldc_engine name="DJI-3510-380">
+ <velocityconstant> 380 </velocityconstant>
+ <torqueconstant> 6.1217 </torqueconstant>
+ <maxcurrent> 31.80 </maxcurrent>
+ <maxvolts> 21 </maxvolts>
+</bldc_engine>
