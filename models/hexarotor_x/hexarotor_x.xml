@@ -40,7 +40,6 @@
     </location>
   </metrics>
   <mass_balance>
-    <!--roughtly approximating this as a solid sphere with correct mass-->
     <ixx unit="KG*M2"> 0.45 </ixx>
     <iyy unit="KG*M2"> 0.45 </iyy>
     <izz unit="KG*M2"> 0.95 </izz>
@@ -106,7 +105,7 @@
     </contact>
   </ground_reactions>
 
-  <!---->
+  <!--Final Configuration -->
   <propulsion>
     <engine file="DJI-3510-380" name="PX4_1">
       <location unit="M">
@@ -466,4 +465,22 @@
     <axis name="YAW">
         </axis>
   </aerodynamics>
+
+    <output name="prop_perf.csv" type="CSV">
+  	<property>propulsion/engine[0]/thrust-lbs</property>
+	<property>propulsion/engine[0]/prop_torque_ftlbs</property>
+    <property>propulsion/engine[1]/thrust-lbs</property>
+	<property>propulsion/engine[1]/prop_torque_ftlbs</property>
+    <property>propulsion/engine[2]/thrust-lbs</property>
+	<property>propulsion/engine[2]/prop_torque_ftlbs</property>
+    <property>propulsion/engine[3]/thrust-lbs</property>
+	<property>propulsion/engine[3]/prop_torque_ftlbs</property>
+    <property>propulsion/engine[4]/thrust-lbs</property>
+	<property>propulsion/engine[4]/prop_torque_ftlbs</property>
+    <property>propulsion/engine[5]/thrust-lbs</property>
+	<property>propulsion/engine[5]/prop_torque_ftlbs</property>
+    <forces>ON</forces>
+    <moments>ON</moments>
+    </output>
+
 </fdm_config>
